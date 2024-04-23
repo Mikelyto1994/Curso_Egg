@@ -1,0 +1,18 @@
+div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}
+p {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    display: inline-block; /* Da propiedad de linea y bloque */
+}
+a {
+    background-color: blueviolet;
+    display: block;
+    width: 200px;
+    height: 200px;
+}

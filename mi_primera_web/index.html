@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Primera Web</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/c4e4952ea0.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header id="encabezado">
+      <a href="index.html">
+        <i class="fa-solid fa-bolt"></i>
+      </a>
+      <!-- <p class="tituloPrincipal" style="color: white;">Titulo</p> -->
+      <!-- <input type="checkbox" id="check" /> -->
+      <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="navli"><a href="">Inicio</a></li>
+          <li class="navli"><a href="">Acerca de mi</a></li>
+          <li class="navli"><a href="">Trabajos</a></li>
+          <li class="navli"><a href="">Servicios</a></li>
+          <li class="navli"><a href="">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="seccion-principal">
+      <section class="seccion-1">
+        <div class="acerca-de">
+          <h2>Acerca de Mí</h2>
+          <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.</p>
+          <p class="parrafo2">¡Hola! 👋 Soy Angel, una apasionada persona de 23 años nacida el 4 de diciembre del 2000, 
+            mi enfoque en la vida se basa en la honestidad, la responsabilidad y el deseo constante de superación.</p>
+        </div>
+        <div class="acerca-imagen">
+          <img src="img/Foto_Personal.jpg" alt="imagen personal">
+        </div>
+      </section>
+      <section class="seccion-2">
+        <img src="img/Imagen_Carrusel.jpg" alt="imagen carrusel">
+      </section>
+      <h2 class="subtitulo">Trabajos</h2>
+      <section class="seccion-3">
+        <div class="principal-articulo">
+          <div class="img-trabajo">
+            <img class="img-empresa" src="img/Grupo_Leoncito.jpg" alt="">
+          </div>
+          <div class="cuerpo">
+            <h3>Retail Leoncito</h3>
+            <p>
+              Mi primer trabajo como desarrollador de software, donde basicamente me dedique a programar en el apartado de Front-End del area de Tecnología de la Información.
+              Brinde servicios durante poco más de un año, donde aprendi diversas cosas entre ellas el framework vue.
+            </p>
+            <p class="leer-mas">Leer más</p>
+          </div>
+        </div>
+        <div class="principal-articulo">
+          <div class="img-trabajo">
+            <img class="img-empresa" src="img/IdeSolution.png" alt="">
+          </div>
+          <div class="cuerpo">
+            <h3>Ide Solution</h3>
+            <p>
+              Mi segundo trabajo como desarrollador de sotware, en esta ocasión la forma de trabajo de la empresa seria distinta a la primera.
+              Brinde servicios durante poco más de 8 meses, donde aprendi lenguajes como C++, SQL Server, Angular.
+            </p>
+            <p class="leer-mas">Leer más</p>
+          </div>
+        </div>
+        <div class="principal-articulo">
+          <div class="img-trabajo">
+            <img class="img-empresa" src="img/Innovahtec.png" alt="">
+          </div>
+          <div class="cuerpo">
+            <h3>Innovahtec Solutions</h3>
+            <p>
+              Mi tercer y actual empleo como desarrolaldor, en esta empresa brindo servicios como programador full stack, trabajando con diversas herramientas y lenguajes, entre ellos:
+              Aws, Sql Server, Vue 2, Vue 3, Django, PHP
+            </p>
+            <p class="leer-mas">Leer más</p>
+          </div>
+        </div>
+      </section>
+      <section class="seccion-4">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></>
+
+        <form action="" method="get" class="formulario" id="form">
+            <!-- El atributo for debe coincidir con el atributo name -->
+          <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="pepe@gmail.com"
+              />
+          </div>
+          <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+              <button type="submit" id="submit">Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <h3 style="color: yellow;">Redes Sociales</h3>
+      <nav class="nav-footer">
+        <ul class="nav-footer-ul">
+          <li><a class="a-redes" href="">Contacto</a></li>
+          <li><a class="a-redes" href="">Instagram</a></li>
+          <li><a class="a-redes" href="">Linkedin</a></li>
+          <li><a class="a-redes" href="">Correo</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <a class="fixed-rayo" href="index.html">
+      <i class="fa-solid fa-bolt"></i>
+    </a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* div {
+    background-color: rgb(50, 168, 214);
+    color: white;
+}
+
+ol li {
+    color: blue;
+}
+
+ul li {
+    color: red;
+}
+
+.parrafo1 {
+    color: violet;
+}
+
+#contenedor-principal {
+    background-color: blue;
+}
+
+.border {
+    border: 5px solid black;
+
+} */
+
+/* Como especifidad, mientras mas abajo este el atributo va pisar a los anteriores 
+
+    Siempre el mas especifico es el del ID
+*/
+
+
+#contenedor-principal {
+    background-color: blueviolet;
+}
+
+div{
+    background-color: red;
+}
+
+div {
+    background-color: rgb(25, 194, 36);
+}
+
+/* Especificidad */
+body div#contenedor-principal h1 {
+    color: brown;
+}
+/* No toma este porque arriba es mucho mas especifico */
+h1 {
+    color: white;
+}
+
+div.border p.border{
+    border: 3px solid violet;
+}

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    height: 1200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.ejemplo {
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: flex-start; */
+    width: 800px;
+    margin: 50px 0;
+    background-color: #d6e9fe;
+}
+
+.item img {
+    display: block;
+}
+
+/* Toma como referencia su posicion actual */
+.item-relative {
+    position: relative;
+    /* display: none; */
+    /*visibility: hidden;*/  /*Respeta el espacio*/
+    height: 1000px;
+    top: 30px;
+    left: 30px;
+}
+
+/* Toma como referencia la pantalla del navegador o por el contrario a su contenedor si es relativo */
+.item-absolute {
+    position: absolute;
+    /* z-index: -1; */
+    /* top: 150px;
+    left: 50px; */
+}
+
+/* .container .absolute {
+    background-color: red;
+    position: relative
+} */
+
+.item-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }

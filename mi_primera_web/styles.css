@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  /* font-optical-sizing: auto; */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgba(34, 33, 31, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+header a i {
+  color: white;
+  font-size: 3em;
+  padding: 0.5em;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.3em; /* Investigar  */
+}
+
+header nav ul li a {
+  color: white;
+}
+
+.acerca-de {
+  /* background-color: yellow; */
+  width: 300px;
+  text-align: right;
+  padding-right: 3em !important;
+}
+
+.acerca-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 380px !important;
+  /* background-color: red; */
+}
+
+.acerca-imagen img {
+  width: 350px;
+  height: 350px;
+}
+
+#seccion-principal {
+  width: 100%;
+}
+
+#seccion-principal .seccion-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.seccion-2 img {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  background-color: rgba(34, 33, 31, 0.85);
+  /* margin: 0px; */
+  padding: 10px 30px;
+}
+
+.a-redes {
+  color: white;
+}
+
+.fixed-rayo {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.fixed-rayo i {
+  color: blue;
+  font-size: 3em;
+  padding: 0.5em;
+}
+
+.fixed-rayo i:hover {
+  color: green;
+}
+
+/* NUEVO CSS */
+.subtitulo {
+  margin: 20px 50px;
+}
+
+.seccion-3 {
+  margin: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.principal-articulo {
+  /* background-color: red; */
+  width: 300px;
+  /* height: 900px; */
+  /* align-items: center; */
+}
+
+.img-trabajo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+}
+
+.img-empresa {
+  border-radius: 25px;
+  width: 180px;
+  height: 180px;
+}
+
+.leer-mas {
+  display: block;
+  color: rgb(153, 153, 15);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.cuerpo {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: red; */
+  height: 300px;
+}
+
+/* MENU */
+/* #check {
+    display: none;
+} */
+
+.checkbtn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-footer-ul {
+  padding-left: 0px !important;
+}
+
+/*
+    FORMULARIO
+*/
+
+.seccion-4 {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seccion-4 h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/*  Este selector en CSS es un selector de atributo que aplica el CSS a los elementos que sean input de tipo text. */
+.form-row input[type="text"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+  width: 100%;
+}
+
+.form-row button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #5995da;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.form-row button:hover {
+  background-color: #76aeed;
+}
+
+.form-row button:active {
+  background-color: #407fc7;
+}
+
+/*
+    ==============
+*/
+
+/* dispositivos mobiles < 768 < dispositivos medianos < 1024px < dispositivos de computadoras */
+
+@media (max-width: 768px) {
+  #seccion-principal .seccion-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .acerca-imagen img {
+    width: 400px;
+    height: 400px !important;
+  }
+
+  .acerca-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px !important;
+  }
+
+  header {
+    background-color: burlywood;
+  }
+
+  .acerca-de {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  /* #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        text-align: center;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+        padding-inline-start: 0px !important;
+    } */
+
+  /* #check:checked ~ ul {
+        left: 0;
+        display: block;
+    } */
+
+  #encabezado nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #encabezado nav ul li a {
+    font-size: 20px;
+  }
+
+  /* #check:checked ~ .checkbtn {
+        color: #2c3e50;
+    } */
+
+  .navbar {
+    height: 0vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    text-align: center;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+
+  .navbar ul.menu {
+    float: none;
+    display: block;
+    width: 174px;
+    margin: 0 auto;
+    opacity: 0;
+    height: 100%;
+  }
+
+  .navbar ul.menu li a:hover {
+    color: #b59a61;
+  }
+  /* ACTIVE */
+  .navbar.active {
+    height: 100vh;
+  }
+
+  .navbar.active ul.menu {
+    opacity: 1;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    width: 30%;
+  }
+}
