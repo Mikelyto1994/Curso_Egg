@@ -1,4 +1,4 @@
-const navSelector = document.getElementById("nav");
+const navSelector = document.getElementById("nav"); /* Resulta que has colocado ElementsById, y en tu estructura html está como clase, asi que opte por cambiar la clase a ID en HTML y se solucionó parcialmente... Luego veo que el estilo tuve que eliminar la dependencia a UL y LI, ya que se ha creado dinamicamente el anchor como hijo de la barra NAV sin la LI ni la UL .. para que lo tengas en cuenta al ejecutar la pagina */
 
 const options = [
   { text: "Ofertas de la semana", linkTo: "./outlet.html" },
